@@ -1,0 +1,938 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.6">
+<model name="serial snake">
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+
+<!--                                                   links 
+                                                           -->               
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> 
+
+<!--                                     BOX parts      -->
+
+  <!-- ---------------------------------parallel link 01-------------------------------------------------------------------------- -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_01_box">
+    <pose>0 0 0.05 0 0 0</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+  
+ <!-- ---------------------------------parallel link 02------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_02_box">
+    <pose>0 -0.10 0.05 0 0 0</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 03------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_03_box">
+    <pose>0 -0.20 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 04------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_04_box">
+    <pose>0 -0.30 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 05------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_05_box">
+    <pose>0 -0.40 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 06------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_06_box">
+    <pose>0 -0.50 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 07------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_07_box">
+    <pose>0 -0.60 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 08------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_08_box">
+    <pose>0 -0.70 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+ <!-- ---------------------------------parallel link 09------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_09_box">
+    <pose>0 -0.80 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 10------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_10_box">
+    <pose>0 -0.90 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 11------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_11_box">
+    <pose>0 -1.00 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+ <!-- ---------------------------------parallel link 12------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_12_box">
+    <pose>0 -1.10 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 13------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_13_box">
+    <pose>0 -1.20 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+ <!-- ---------------------------------parallel link 14------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_14_box">
+    <pose>0 -1.30 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+  <!-- ---------------------------------parallel link 15------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_15_box">
+    <pose>0 -1.40 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 16------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_16_box">
+    <pose>0 -1.50 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 17------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_17_box">
+    <pose>0 -1.60 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 18------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_18_box">
+    <pose>0 -1.70 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+   <!-- ---------------------------------parallel link 19------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_19_box">
+    <pose>0 -1.80 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 20------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_20_box">
+    <pose>0 -1.90 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+ <!-- ---------------------------------parallel link 21------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_21_box">
+    <pose>0 -2.00 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+
+<!--                                                   Dynamic  joints                                                             -->               
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->   
+
+<!-- MOVEMENT  - plink 02 --------------------------------------------------------------------------------------->
+<joint name="plink_2_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_01_box</child>
+  <parent>plink_02_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+	<!-- have taklen 25 degrees as the llimit for actuation -->
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 03 --------------------------------------------------------------------------------------->
+<joint name="plink_3_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_02_box</child>
+  <parent>plink_03_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 04 --------------------------------------------------------------------------------------->
+<joint name="plink_4_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_03_box</child>
+  <parent>plink_04_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 05 --------------------------------------------------------------------------------------->
+<joint name="plink_5_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_04_box</child>
+  <parent>plink_05_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 06 --------------------------------------------------------------------------------------->
+<joint name="plink_6_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_05_box</child>
+  <parent>plink_06_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 07 --------------------------------------------------------------------------------------->
+<joint name="plink_7_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_06_box</child>
+  <parent>plink_07_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 08 --------------------------------------------------------------------------------------->
+<joint name="plink_8_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_07_box</child>
+  <parent>plink_08_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 09 --------------------------------------------------------------------------------------->
+<joint name="plink_9_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_08_box</child>
+  <parent>plink_09_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 10 --------------------------------------------------------------------------------------->
+<joint name="plink_10_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_09_box</child>
+  <parent>plink_10_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 11 --------------------------------------------------------------------------------------->
+<joint name="plink_11_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_10_box</child>
+  <parent>plink_11_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 12 --------------------------------------------------------------------------------------->
+<joint name="plink_12_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_11_box</child>
+  <parent>plink_12_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 13 --------------------------------------------------------------------------------------->
+<joint name="plink_13_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_12_box</child>
+  <parent>plink_13_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 14 --------------------------------------------------------------------------------------->
+<joint name="plink_14_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_13_box</child>
+  <parent>plink_14_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 15 --------------------------------------------------------------------------------------->
+<joint name="plink_15_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_14_box</child>
+  <parent>plink_15_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 16 --------------------------------------------------------------------------------------->
+<joint name="plink_16_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_15_box</child>
+  <parent>plink_16_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 17 --------------------------------------------------------------------------------------->
+<joint name="plink_17_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_16_box</child>
+  <parent>plink_17_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 18 --------------------------------------------------------------------------------------->
+<joint name="plink_18_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_17_box</child>
+  <parent>plink_18_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 19 --------------------------------------------------------------------------------------->
+<joint name="plink_19_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_18_box</child>
+  <parent>plink_19_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT  - plink 20 --------------------------------------------------------------------------------------->
+<joint name="plink_20_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_19_box</child>
+  <parent>plink_20_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- MOVEMENT  - plink 21 --------------------------------------------------------------------------------------->
+<joint name="plink_21_MOVE" type="revolute">
+  <pose>0 -0.0525 0 0 0 0</pose>
+  <child>plink_20_box</child>
+  <parent>plink_21_box</parent>
+  <axis>
+    <xyz>0 0 1</xyz>
+    <limit>
+      <lower>-0.436332</lower>
+      <upper>0.436332</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+
+<!--                                     Plugin                                                                       -->               
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+
+<!-- Note - for the plugin to work uncomment the plugin tag and enter the absoute path of the plugin libmovementPLugin.so below -->
+<!--<plugin name="movementPlugin" filename="" />  -->
+
+</model>
+</sdf>

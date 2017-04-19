@@ -1,0 +1,4485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.6">
+<model name="parallel snake">
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+
+<!--                                                   links 
+                                                           -->               
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> 
+
+<!--                                     BOX parts      -->
+
+  <!-- ---------------------------------parallel link 01-------------------------------------------------------------------------- -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_01_box">
+    <pose>0 0 0.05 0 0 0</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+  
+ <!-- ---------------------------------parallel link 02------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_02_box">
+    <pose>0 -0.10 0.05 0 0 0</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 03------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_03_box">
+    <pose>0 -0.20 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 04------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_04_box">
+    <pose>0 -0.30 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 05------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_05_box">
+    <pose>0 -0.40 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 06------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_06_box">
+    <pose>0 -0.50 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 07------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_07_box">
+    <pose>0 -0.60 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 08------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_08_box">
+    <pose>0 -0.70 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+ <!-- ---------------------------------parallel link 09------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_09_box">
+    <pose>0 -0.80 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 10------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_10_box">
+    <pose>0 -0.90 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 11------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_11_box">
+    <pose>0 -1.00 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+ <!-- ---------------------------------parallel link 12------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_12_box">
+    <pose>0 -1.10 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 13------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_13_box">
+    <pose>0 -1.20 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+ <!-- ---------------------------------parallel link 14------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_14_box">
+    <pose>0 -1.30 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+  <!-- ---------------------------------parallel link 15------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_15_box">
+    <pose>0 -1.40 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 16------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_16_box">
+    <pose>0 -1.50 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 17------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_17_box">
+    <pose>0 -1.60 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 18------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_18_box">
+    <pose>0 -1.70 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+   <!-- ---------------------------------parallel link 19------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_19_box">
+    <pose>0 -1.80 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link>
+ <!-- ---------------------------------parallel link 20------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_20_box">
+    <pose>0 -1.90 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+ <!-- ---------------------------------parallel link 21------------------------------------------------------------------------ -->
+  <!-- -- box part ----  ------ -->
+  <link name="plink_21_box">
+    <pose>0 -2.00 0.05 0 0 0</pose> <!-- changes with -0.10 for each  y coord -->
+    <inertial>
+      <inertia>
+        <ixx>0.00018625</ixx> <!-- using tensor matrix -->
+        <iyy>0.00025</iyy>
+        <izz>0.00018625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.15</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>0.1 0.07 0.1</size>
+        </box>
+      </geometry>
+    </visual>
+  </link> 
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!--                             spherical part 01 -->
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+ <!-- spherical part 01 -  plink 02 --------------------------------------------------------------------------->
+  <link name="plink_02_sphere_01">
+    <pose>-0.025 -0.065 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 03 --------------------------------------------------------------------------->
+  <link name="plink_03_sphere_01">
+    <pose>-0.025 -0.165 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 04 --------------------------------------------------------------------------->
+  <link name="plink_04_sphere_01">
+    <pose>-0.025 -0.265 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 05 --------------------------------------------------------------------------->
+  <link name="plink_05_sphere_01">
+    <pose>-0.025 -0.365 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 06 --------------------------------------------------------------------------->
+  <link name="plink_06_sphere_01">
+    <pose>-0.025 -0.465 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 07 --------------------------------------------------------------------------->
+  <link name="plink_07_sphere_01">
+    <pose>-0.025 -0.565 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 08 --------------------------------------------------------------------------->
+  <link name="plink_08_sphere_01">
+    <pose>-0.025 -0.665 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 09 --------------------------------------------------------------------------->
+  <link name="plink_09_sphere_01">
+    <pose>-0.025 -0.765 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 10 --------------------------------------------------------------------------->
+  <link name="plink_10_sphere_01">
+    <pose>-0.025 -0.865 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 11 --------------------------------------------------------------------------->
+  <link name="plink_11_sphere_01">
+    <pose>-0.025 -0.965 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 12 --------------------------------------------------------------------------->
+  <link name="plink_12_sphere_01">
+    <pose>-0.025 -1.065 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 13 --------------------------------------------------------------------------->
+  <link name="plink_13_sphere_01">
+    <pose>-0.025 -1.165 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 14 --------------------------------------------------------------------------->
+  <link name="plink_14_sphere_01">
+    <pose>-0.025 -1.265 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 15 --------------------------------------------------------------------------->
+  <link name="plink_15_sphere_01">
+    <pose>-0.025 -1.365 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 16 --------------------------------------------------------------------------->
+  <link name="plink_16_sphere_01">
+    <pose>-0.025 -1.465 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 17 --------------------------------------------------------------------------->
+  <link name="plink_17_sphere_01">
+    <pose>-0.025 -1.565 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 18 --------------------------------------------------------------------------->
+  <link name="plink_18_sphere_01">
+    <pose>-0.025 -1.665 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 - plink 19 --------------------------------------------------------------------------->
+  <link name="plink_19_sphere_01">
+    <pose>-0.025 -1.765 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 20 --------------------------------------------------------------------------->
+  <link name="plink_20_sphere_01">
+    <pose>-0.025 -1.865 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+ <!-- spherical part 01 -  plink 21 --------------------------------------------------------------------------->
+  <link name="plink_21_sphere_01">
+    <pose>-0.025 -1.965 0.075 0 1.5707 1.5707</pose><!-- y coord-> (-10+3.5)/100 m    -->
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!--                             spherical part 02 -->
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- spherical part 02 -plink 02-------------------------------------->
+  <link name="plink_02_sphere_02">
+    <pose>0.025 -0.065 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 03-------------------------------------->
+  <link name="plink_03_sphere_02">
+    <pose>0.025 -0.165 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 04-------------------------------------->
+  <link name="plink_04_sphere_02">
+    <pose>0.025 -0.265 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 05-------------------------------------->
+  <link name="plink_05_sphere_02">
+    <pose>0.025 -0.365 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 06-------------------------------------->
+  <link name="plink_06_sphere_02">
+    <pose>0.025 -0.465 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 07-------------------------------------->
+  <link name="plink_07_sphere_02">
+    <pose>0.025 -0.565 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 08-------------------------------------->
+  <link name="plink_08_sphere_02">
+    <pose>0.025 -0.665 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 09-------------------------------------->
+  <link name="plink_09_sphere_02">
+    <pose>0.025 -0.765 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 10-------------------------------------->
+  <link name="plink_10_sphere_02">
+    <pose>0.025 -0.865 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 11-------------------------------------->
+  <link name="plink_11_sphere_02">
+    <pose>0.025 -0.965 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 12-------------------------------------->
+  <link name="plink_12_sphere_02">
+    <pose>0.025 -1.065 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 13-------------------------------------->
+  <link name="plink_13_sphere_02">
+    <pose>0.025 -1.165 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 14-------------------------------------->
+  <link name="plink_14_sphere_02">
+    <pose>0.025 -1.265 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 15-------------------------------------->
+  <link name="plink_15_sphere_02">
+    <pose>0.025 -1.365 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 16-------------------------------------->
+  <link name="plink_16_sphere_02">
+    <pose>0.025 -1.465 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 17-------------------------------------->
+  <link name="plink_17_sphere_02">
+    <pose>0.025 -1.565 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 18-------------------------------------->
+  <link name="plink_18_sphere_02">
+    <pose>0.025 -1.665 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 19-------------------------------------->
+  <link name="plink_19_sphere_02">
+    <pose>0.025 -1.765 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 20-------------------------------------->
+  <link name="plink_20_sphere_02">
+    <pose>0.025 -1.865 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 02 -plink 21-------------------------------------->
+  <link name="plink_21_sphere_02">
+    <pose>0.025 -1.965 0.075 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!--                             spherical part 03 -->
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- spherical part 03 - plink 02 ----------------------------------------------->
+  <link name="plink_02_sphere_03">
+    <pose>-0.025 -0.065 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 03 ----------------------------------------------->
+  <link name="plink_03_sphere_03">
+    <pose>-0.025 -0.165 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 04 ----------------------------------------------->
+  <link name="plink_04_sphere_03">
+    <pose>-0.025 -0.265 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 05 ----------------------------------------------->
+  <link name="plink_05_sphere_03">
+    <pose>-0.025 -0.365 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 06 ----------------------------------------------->
+  <link name="plink_06_sphere_03">
+    <pose>-0.025 -0.465 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 07 ----------------------------------------------->
+  <link name="plink_07_sphere_03">
+    <pose>-0.025 -0.565 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 08 ----------------------------------------------->
+  <link name="plink_08_sphere_03">
+    <pose>-0.025 -0.665 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 09 ----------------------------------------------->
+  <link name="plink_09_sphere_03">
+    <pose>-0.025 -0.765 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 10 ----------------------------------------------->
+  <link name="plink_10_sphere_03">
+    <pose>-0.025 -0.865 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 11 ----------------------------------------------->
+  <link name="plink_11_sphere_03">
+    <pose>-0.025 -0.965 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 12 ----------------------------------------------->
+  <link name="plink_12_sphere_03">
+    <pose>-0.025 -1.065 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 13 ----------------------------------------------->
+  <link name="plink_13_sphere_03">
+    <pose>-0.025 -1.165 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 14 ----------------------------------------------->
+  <link name="plink_14_sphere_03">
+    <pose>-0.025 -1.265 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 15 ----------------------------------------------->
+  <link name="plink_15_sphere_03">
+    <pose>-0.025 -1.365 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 16 ----------------------------------------------->
+  <link name="plink_16_sphere_03">
+    <pose>-0.025 -1.465 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 17 ----------------------------------------------->
+  <link name="plink_17_sphere_03">
+    <pose>-0.025 -1.565 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 18 ----------------------------------------------->
+  <link name="plink_18_sphere_03">
+    <pose>-0.025 -1.665 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 19 ----------------------------------------------->
+  <link name="plink_19_sphere_03">
+    <pose>-0.025 -1.765 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 20 ----------------------------------------------->
+  <link name="plink_20_sphere_03">
+    <pose>-0.025 -1.865 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 03 - plink 21 ----------------------------------------------->
+  <link name="plink_21_sphere_03">
+    <pose>-0.025 -1.965 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!--                             spherical part 04 -->
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- spherical part 04 - plink 02 ----------------------------------------------->
+  <link name="plink_02_sphere_04">
+    <pose>0.025 -0.065 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 03 ----------------------------------------------->
+  <link name="plink_03_sphere_04">
+    <pose>0.025 -0.165 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 04 ----------------------------------------------->
+  <link name="plink_04_sphere_04">
+    <pose>0.025 -0.265 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 05 ----------------------------------------------->
+  <link name="plink_05_sphere_04">
+    <pose>0.025 -0.365 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 06 ----------------------------------------------->
+  <link name="plink_06_sphere_04">
+    <pose>0.025 -0.465 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 07 ----------------------------------------------->
+  <link name="plink_07_sphere_04">
+    <pose>0.025 -0.565 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 08 ----------------------------------------------->
+  <link name="plink_08_sphere_04">
+    <pose>0.025 -0.665 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 09 ----------------------------------------------->
+  <link name="plink_09_sphere_04">
+    <pose>0.025 -0.765 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 10 ----------------------------------------------->
+  <link name="plink_10_sphere_04">
+    <pose>0.025 -0.865 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 11 ----------------------------------------------->
+  <link name="plink_11_sphere_04">
+    <pose>0.025 -0.965 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 12 ----------------------------------------------->
+  <link name="plink_12_sphere_04">
+    <pose>0.025 -1.065 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 13 ----------------------------------------------->
+  <link name="plink_13_sphere_04">
+    <pose>0.025 -1.165 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 14 ----------------------------------------------->
+  <link name="plink_14_sphere_04">
+    <pose>0.025 -1.265 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 15 ----------------------------------------------->
+  <link name="plink_15_sphere_04">
+    <pose>0.025 -1.365 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 16 ----------------------------------------------->
+  <link name="plink_16_sphere_04">
+    <pose>0.025 -1.465 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 17 ----------------------------------------------->
+  <link name="plink_17_sphere_04">
+    <pose>0.025 -1.565 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 18 ----------------------------------------------->
+  <link name="plink_18_sphere_04">
+    <pose>0.025 -1.665 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 19 ----------------------------------------------->
+  <link name="plink_19_sphere_04">
+    <pose>0.025 -1.765 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 20 ----------------------------------------------->
+  <link name="plink_20_sphere_04">
+    <pose>0.025 -1.865 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+  <!-- spherical part 04 - plink 21 ----------------------------------------------->
+  <link name="plink_21_sphere_04">
+    <pose>0.025 -1.965 0.025 0 1.5707 1.5707</pose>
+    <inertial>
+      <inertia>
+        <ixx>0.0000015625</ixx>
+        <iyy>0.0000015625</iyy>
+        <izz>0.0000015625</izz>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyz>0</iyz>
+      </inertia>
+      <mass>0.025</mass>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <sphere>
+          <radius>0.0125</radius>
+        </sphere>
+      </geometry>
+    </visual>      
+  </link>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+
+<!--                                          Static joints SPHERICAL                                                              -->               
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> 
+
+  <!-- static ball joints - plink 02 ---------------------------------------------------------------------------------------->
+
+  <joint name="plink_02_sphere2box_01" type="ball">
+    <parent>plink_02_box</parent>
+    <child>plink_02_sphere_01</child>
+  </joint>
+  <joint name="plink_02_sphere2box_02" type="ball">
+    <parent>plink_02_box</parent>
+    <child>plink_02_sphere_02</child>
+  </joint>
+  <joint name="plink_02_sphere2box_03" type="ball">
+    <parent>plink_02_box</parent>
+    <child>plink_02_sphere_03</child>
+  </joint>
+  <joint name="plink_02_sphere2box_04" type="ball">
+    <parent>plink_02_box</parent>
+    <child>plink_02_sphere_04</child>
+  </joint>
+
+<!-- static ball joints - plink 03---------------------------------------------------------------------------------------->
+
+  <joint name="plink_03_sphere2box_01" type="ball">
+    <parent>plink_03_box</parent>
+    <child>plink_03_sphere_01</child>
+  </joint>
+  <joint name="plink_03_sphere2box_02" type="ball">
+    <parent>plink_03_box</parent>
+    <child>plink_03_sphere_02</child>
+  </joint>
+  <joint name="plink_03_sphere2box_03" type="ball">
+    <parent>plink_03_box</parent>
+    <child>plink_03_sphere_03</child>
+  </joint>
+  <joint name="plink_03_sphere2box_04" type="ball">
+    <parent>plink_03_box</parent>
+    <child>plink_03_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 04 ---------------------------------------------------------------------------------------->
+  <joint name="plink_04_sphere2box_01" type="ball">
+    <parent>plink_04_box</parent>
+    <child>plink_04_sphere_01</child>
+  </joint>
+  <joint name="plink_04_sphere2box_02" type="ball">
+    <parent>plink_04_box</parent>
+    <child>plink_04_sphere_02</child>
+  </joint>
+  <joint name="plink_04_sphere2box_03" type="ball">
+    <parent>plink_04_box</parent>
+    <child>plink_04_sphere_03</child>
+  </joint>
+  <joint name="plink_04_sphere2box_04" type="ball">
+    <parent>plink_04_box</parent>
+    <child>plink_04_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 05 ---------------------------------------------------------------------------------------->
+  <joint name="plink_05_sphere2box_01" type="ball">
+    <parent>plink_05_box</parent>
+    <child>plink_05_sphere_01</child>
+  </joint>
+  <joint name="plink_05_sphere2box_02" type="ball">
+    <parent>plink_05_box</parent>
+    <child>plink_05_sphere_02</child>
+  </joint>
+  <joint name="plink_05_sphere2box_03" type="ball">
+    <parent>plink_05_box</parent>
+    <child>plink_05_sphere_03</child>
+  </joint>
+  <joint name="plink_05_sphere2box_04" type="ball">
+    <parent>plink_05_box</parent>
+    <child>plink_05_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 06 ---------------------------------------------------------------------------------------->
+  <joint name="plink_06_sphere2box_01" type="ball">
+    <parent>plink_06_box</parent>
+    <child>plink_06_sphere_01</child>
+  </joint>
+  <joint name="plink_06_sphere2box_02" type="ball">
+    <parent>plink_06_box</parent>
+    <child>plink_06_sphere_02</child>
+  </joint>
+  <joint name="plink_06_sphere2box_03" type="ball">
+    <parent>plink_06_box</parent>
+    <child>plink_06_sphere_03</child>
+  </joint>
+  <joint name="plink_06_sphere2box_04" type="ball">
+    <parent>plink_06_box</parent>
+    <child>plink_06_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 07 ---------------------------------------------------------------------------------------->
+  <joint name="plink_07_sphere2box_01" type="ball">
+    <parent>plink_07_box</parent>
+    <child>plink_07_sphere_01</child>
+  </joint>
+  <joint name="plink_07_sphere2box_02" type="ball">
+    <parent>plink_07_box</parent>
+    <child>plink_07_sphere_02</child>
+  </joint>
+  <joint name="plink_07_sphere2box_03" type="ball">
+    <parent>plink_07_box</parent>
+    <child>plink_07_sphere_03</child>
+  </joint>
+  <joint name="plink_07_sphere2box_04" type="ball">
+    <parent>plink_07_box</parent>
+    <child>plink_07_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 08 ---------------------------------------------------------------------------------------->
+  <joint name="plink_08_sphere2box_01" type="ball">
+    <parent>plink_08_box</parent>
+    <child>plink_08_sphere_01</child>
+  </joint>
+  <joint name="plink_08_sphere2box_02" type="ball">
+    <parent>plink_08_box</parent>
+    <child>plink_08_sphere_02</child>
+  </joint>
+  <joint name="plink_08_sphere2box_03" type="ball">
+    <parent>plink_08_box</parent>
+    <child>plink_08_sphere_03</child>
+  </joint>
+  <joint name="plink_08_sphere2box_04" type="ball">
+    <parent>plink_08_box</parent>
+    <child>plink_08_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 09 ---------------------------------------------------------------------------------------->
+  <joint name="plink_09_sphere2box_01" type="ball">
+    <parent>plink_09_box</parent>
+    <child>plink_09_sphere_01</child>
+  </joint>
+  <joint name="plink_09_sphere2box_02" type="ball">
+    <parent>plink_09_box</parent>
+    <child>plink_09_sphere_02</child>
+  </joint>
+  <joint name="plink_09_sphere2box_03" type="ball">
+    <parent>plink_09_box</parent>
+    <child>plink_09_sphere_03</child>
+  </joint>
+  <joint name="plink_09_sphere2box_04" type="ball">
+    <parent>plink_09_box</parent>
+    <child>plink_09_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 10 ---------------------------------------------------------------------------------------->
+  <joint name="plink_10_sphere2box_01" type="ball">
+    <parent>plink_10_box</parent>
+    <child>plink_10_sphere_01</child>
+  </joint>
+  <joint name="plink_10_sphere2box_02" type="ball">
+    <parent>plink_10_box</parent>
+    <child>plink_10_sphere_02</child>
+  </joint>
+  <joint name="plink_10_sphere2box_03" type="ball">
+    <parent>plink_10_box</parent>
+    <child>plink_10_sphere_03</child>
+  </joint>
+  <joint name="plink_10_sphere2box_04" type="ball">
+    <parent>plink_10_box</parent>
+    <child>plink_10_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 11 ---------------------------------------------------------------------------------------->
+  <joint name="plink_11_sphere2box_01" type="ball">
+    <parent>plink_11_box</parent>
+    <child>plink_11_sphere_01</child>
+  </joint>
+  <joint name="plink_11_sphere2box_02" type="ball">
+    <parent>plink_11_box</parent>
+    <child>plink_11_sphere_02</child>
+  </joint>
+  <joint name="plink_11_sphere2box_03" type="ball">
+    <parent>plink_11_box</parent>
+    <child>plink_11_sphere_03</child>
+  </joint>
+  <joint name="plink_11_sphere2box_04" type="ball">
+    <parent>plink_11_box</parent>
+    <child>plink_11_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 12 ---------------------------------------------------------------------------------------->
+  <joint name="plink_12_sphere2box_01" type="ball">
+    <parent>plink_12_box</parent>
+    <child>plink_12_sphere_01</child>
+  </joint>
+  <joint name="plink_12_sphere2box_02" type="ball">
+    <parent>plink_12_box</parent>
+    <child>plink_12_sphere_02</child>
+  </joint>
+  <joint name="plink_12_sphere2box_03" type="ball">
+    <parent>plink_12_box</parent>
+    <child>plink_12_sphere_03</child>
+  </joint>
+  <joint name="plink_12_sphere2box_04" type="ball">
+    <parent>plink_12_box</parent>
+    <child>plink_12_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 13 ---------------------------------------------------------------------------------------->
+  <joint name="plink_13_sphere2box_01" type="ball">
+    <parent>plink_13_box</parent>
+    <child>plink_13_sphere_01</child>
+  </joint>
+  <joint name="plink_13_sphere2box_02" type="ball">
+    <parent>plink_13_box</parent>
+    <child>plink_13_sphere_02</child>
+  </joint>
+  <joint name="plink_13_sphere2box_03" type="ball">
+    <parent>plink_13_box</parent>
+    <child>plink_13_sphere_03</child>
+  </joint>
+  <joint name="plink_13_sphere2box_04" type="ball">
+    <parent>plink_13_box</parent>
+    <child>plink_13_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 14 ---------------------------------------------------------------------------------------->
+  <joint name="plink_14_sphere2box_01" type="ball">
+    <parent>plink_14_box</parent>
+    <child>plink_14_sphere_01</child>
+  </joint>
+  <joint name="plink_14_sphere2box_02" type="ball">
+    <parent>plink_14_box</parent>
+    <child>plink_14_sphere_02</child>
+  </joint>
+  <joint name="plink_14_sphere2box_03" type="ball">
+    <parent>plink_14_box</parent>
+    <child>plink_14_sphere_03</child>
+  </joint>
+  <joint name="plink_14_sphere2box_04" type="ball">
+    <parent>plink_14_box</parent>
+    <child>plink_14_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 15 ---------------------------------------------------------------------------------------->
+  <joint name="plink_15_sphere2box_01" type="ball">
+    <parent>plink_15_box</parent>
+    <child>plink_15_sphere_01</child>
+  </joint>
+  <joint name="plink_15_sphere2box_02" type="ball">
+    <parent>plink_15_box</parent>
+    <child>plink_15_sphere_02</child>
+  </joint>
+  <joint name="plink_15_sphere2box_03" type="ball">
+    <parent>plink_15_box</parent>
+    <child>plink_15_sphere_03</child>
+  </joint>
+  <joint name="plink_15_sphere2box_04" type="ball">
+    <parent>plink_15_box</parent>
+    <child>plink_15_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 16 ---------------------------------------------------------------------------------------->
+  <joint name="plink_16_sphere2box_01" type="ball">
+    <parent>plink_16_box</parent>
+    <child>plink_16_sphere_01</child>
+  </joint>
+  <joint name="plink_16_sphere2box_02" type="ball">
+    <parent>plink_16_box</parent>
+    <child>plink_16_sphere_02</child>
+  </joint>
+  <joint name="plink_16_sphere2box_03" type="ball">
+    <parent>plink_16_box</parent>
+    <child>plink_16_sphere_03</child>
+  </joint>
+  <joint name="plink_16_sphere2box_04" type="ball">
+    <parent>plink_16_box</parent>
+    <child>plink_16_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 17 ---------------------------------------------------------------------------------------->
+  <joint name="plink_17_sphere2box_01" type="ball">
+    <parent>plink_17_box</parent>
+    <child>plink_17_sphere_01</child>
+  </joint>
+  <joint name="plink_17_sphere2box_02" type="ball">
+    <parent>plink_17_box</parent>
+    <child>plink_17_sphere_02</child>
+  </joint>
+  <joint name="plink_17_sphere2box_03" type="ball">
+    <parent>plink_17_box</parent>
+    <child>plink_17_sphere_03</child>
+  </joint>
+  <joint name="plink_17_sphere2box_04" type="ball">
+    <parent>plink_17_box</parent>
+    <child>plink_17_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 18 ---------------------------------------------------------------------------------------->
+  <joint name="plink_18_sphere2box_01" type="ball">
+    <parent>plink_18_box</parent>
+    <child>plink_18_sphere_01</child>
+  </joint>
+  <joint name="plink_18_sphere2box_02" type="ball">
+    <parent>plink_18_box</parent>
+    <child>plink_18_sphere_02</child>
+  </joint>
+  <joint name="plink_18_sphere2box_03" type="ball">
+    <parent>plink_18_box</parent>
+    <child>plink_18_sphere_03</child>
+  </joint>
+  <joint name="plink_18_sphere2box_04" type="ball">
+    <parent>plink_18_box</parent>
+    <child>plink_18_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 19 ---------------------------------------------------------------------------------------->
+  <joint name="plink_19_sphere2box_01" type="ball">
+    <parent>plink_19_box</parent>
+    <child>plink_19_sphere_01</child>
+  </joint>
+  <joint name="plink_19_sphere2box_02" type="ball">
+    <parent>plink_19_box</parent>
+    <child>plink_19_sphere_02</child>
+  </joint>
+  <joint name="plink_19_sphere2box_03" type="ball">
+    <parent>plink_19_box</parent>
+    <child>plink_19_sphere_03</child>
+  </joint>
+  <joint name="plink_19_sphere2box_04" type="ball">
+    <parent>plink_19_box</parent>
+    <child>plink_19_sphere_04</child>
+  </joint>
+
+  <!-- static ball joints - plink 20 ---------------------------------------------------------------------------------------->
+  <joint name="plink_20_sphere2box_01" type="ball">
+    <parent>plink_20_box</parent>
+    <child>plink_20_sphere_01</child>
+  </joint>
+  <joint name="plink_20_sphere2box_02" type="ball">
+    <parent>plink_20_box</parent>
+    <child>plink_20_sphere_02</child>
+  </joint>
+  <joint name="plink_20_sphere2box_03" type="ball">
+    <parent>plink_20_box</parent>
+    <child>plink_20_sphere_03</child>
+  </joint>
+  <joint name="plink_20_sphere2box_04" type="ball">
+    <parent>plink_20_box</parent>
+    <child>plink_20_sphere_04</child>
+  </joint>
+  <!-- static ball joints - plink 21 ---------------------------------------------------------------------------------------->
+  <joint name="plink_21_sphere2box_01" type="ball">
+    <parent>plink_21_box</parent>
+    <child>plink_21_sphere_01</child>
+  </joint>
+  <joint name="plink_21_sphere2box_02" type="ball">
+    <parent>plink_21_box</parent>
+    <child>plink_21_sphere_02</child>
+  </joint>
+  <joint name="plink_21_sphere2box_03" type="ball">
+    <parent>plink_21_box</parent>
+    <child>plink_21_sphere_03</child>
+  </joint>
+  <joint name="plink_21_sphere2box_04" type="ball">
+    <parent>plink_21_box</parent>
+    <child>plink_21s_sphere_04</child>
+  </joint>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+
+<!--                                                   Dynamic  joints                                                             -->               
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->   
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!--                                                     MOVEMENT 01                                                               -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> 
+
+<!-- MOVEMENT 01 - plink 02 --------------------------------------------------------------------------------------->
+<joint name="plink_2_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_01_box</child>
+  <parent>plink_02_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 03 --------------------------------------------------------------------------------------->
+<joint name="plink_3_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_02_box</child>
+  <parent>plink_03_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 04 --------------------------------------------------------------------------------------->
+<joint name="plink_4_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_03_box</child>
+  <parent>plink_04_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 05 --------------------------------------------------------------------------------------->
+<joint name="plink_5_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_04_box</child>
+  <parent>plink_05_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 06 --------------------------------------------------------------------------------------->
+<joint name="plink_6_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_05_box</child>
+  <parent>plink_06_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 07 --------------------------------------------------------------------------------------->
+<joint name="plink_7_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_06_box</child>
+  <parent>plink_07_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 08 --------------------------------------------------------------------------------------->
+<joint name="plink_8_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_07_box</child>
+  <parent>plink_08_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 09 --------------------------------------------------------------------------------------->
+<joint name="plink_9_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_08_box</child>
+  <parent>plink_09_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 10 -------------------------------------------------------------------------------------->
+<joint name="plink_10_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_09_box</child>
+  <parent>plink_10_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 11 --------------------------------------------------------------------------------------->
+<joint name="plink_11_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_10_box</child>
+  <parent>plink_11_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 12 --------------------------------------------------------------------------------------->
+<joint name="plink_12_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_11_box</child>
+  <parent>plink_12_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 13 --------------------------------------------------------------------------------------->
+<joint name="plink_13_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_12_box</child>
+  <parent>plink_13_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 14 --------------------------------------------------------------------------------------->
+<joint name="plink_14_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_13_box</child>
+  <parent>plink_14_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 15 --------------------------------------------------------------------------------------->
+<joint name="plink_15_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_14_box</child>
+  <parent>plink_15_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 16 --------------------------------------------------------------------------------------->
+<joint name="plink_16_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_15_box</child>
+  <parent>plink_16_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 17 --------------------------------------------------------------------------------------->
+<joint name="plink_17_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_16_box</child>
+  <parent>plink_17_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 18 --------------------------------------------------------------------------------------->
+<joint name="plink_18_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_17_box</child>
+  <parent>plink_18_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 19 --------------------------------------------------------------------------------------->
+<joint name="plink_19_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_18_box</child>
+  <parent>plink_19_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 01 - plink 20 --------------------------------------------------------------------------------------->
+<joint name="plink_20_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_19_box</child>
+  <parent>plink_20_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- MOVEMENT 01 - plink 21 --------------------------------------------------------------------------------------->
+<joint name="plink_21_MOVE_1" type="prismatic">
+  <pose>-0.025 -0.035 0.025 0 0 0</pose><!-- y coord of pose is relative to child centre of mass -->
+  <child>plink_20_box</child>
+  <parent>plink_21_sphere_01</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!--                                                     MOVEMENT 02                                                               -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- MOVEMENT 02 - plink 02 --------------------------------------------------------------------------------------->
+<joint name="plink_2_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_01_box</child>
+  <parent>plink_02_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 03 --------------------------------------------------------------------------------------->
+<joint name="plink_3_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_02_box</child>
+  <parent>plink_03_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 04 --------------------------------------------------------------------------------------->
+<joint name="plink_4_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_03_box</child>
+  <parent>plink_04_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 05 --------------------------------------------------------------------------------------->
+<joint name="plink_5_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_04_box</child>
+  <parent>plink_05_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 06 --------------------------------------------------------------------------------------->
+<joint name="plink_6_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_05_box</child>
+  <parent>plink_06_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 07 --------------------------------------------------------------------------------------->
+<joint name="plink_7_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_06_box</child>
+  <parent>plink_07_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 08 --------------------------------------------------------------------------------------->
+<joint name="plink_8_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_07_box</child>
+  <parent>plink_08_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 09 --------------------------------------------------------------------------------------->
+<joint name="plink_9_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_08_box</child>
+  <parent>plink_09_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 10 --------------------------------------------------------------------------------------->
+<joint name="plink_10_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_09_box</child>
+  <parent>plink_10_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 11 --------------------------------------------------------------------------------------->
+<joint name="plink_11_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_10_box</child>
+  <parent>plink_11_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 12 --------------------------------------------------------------------------------------->
+<joint name="plink_12_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_11_box</child>
+  <parent>plink_12_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 13 --------------------------------------------------------------------------------------->
+<joint name="plink_13_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_12_box</child>
+  <parent>plink_13_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 14 --------------------------------------------------------------------------------------->
+<joint name="plink_14_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_13_box</child>
+  <parent>plink_14_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 15 --------------------------------------------------------------------------------------->
+<joint name="plink_15_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_14_box</child>
+  <parent>plink_15_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 16 --------------------------------------------------------------------------------------->
+<joint name="plink_16_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_15_box</child>
+  <parent>plink_16_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 17 --------------------------------------------------------------------------------------->
+<joint name="plink_17_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_16_box</child>
+  <parent>plink_17_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 18 --------------------------------------------------------------------------------------->
+<joint name="plink_18_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_17_box</child>
+  <parent>plink_18_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 19 --------------------------------------------------------------------------------------->
+<joint name="plink_19_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_18_box</child>
+  <parent>plink_19_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 02 - plink 20 --------------------------------------------------------------------------------------->
+<joint name="plink_20_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_19_box</child>
+  <parent>plink_20_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- MOVEMENT 02 - plink 21 --------------------------------------------------------------------------------------->
+<joint name="plink_21_MOVE_2" type="prismatic">
+  <pose>0.025 -0.035 0.025 0 0 0</pose>
+  <child>plink_20_box</child>
+  <parent>plink_21_sphere_02</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!--                                                     MOVEMENT 03                                                               -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- MOVEMENT 03 - plink 02 --------------------------------------------------------------------------------------->
+<joint name="plink_2_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_01_box</child>
+  <parent>plink_02_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 03 --------------------------------------------------------------------------------------->
+<joint name="plink_3_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_02_box</child>
+  <parent>plink_03_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 04 --------------------------------------------------------------------------------------->
+<joint name="plink_4_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_03_box</child>
+  <parent>plink_04_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 05 --------------------------------------------------------------------------------------->
+<joint name="plink_5_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_04_box</child>
+  <parent>plink_05_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 06 --------------------------------------------------------------------------------------->
+<joint name="plink_6_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_05_box</child>
+  <parent>plink_06_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 07 --------------------------------------------------------------------------------------->
+<joint name="plink_7_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_06_box</child>
+  <parent>plink_07_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 08 --------------------------------------------------------------------------------------->
+<joint name="plink_8_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_07_box</child>
+  <parent>plink_08_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 09 --------------------------------------------------------------------------------------->
+<joint name="plink_9_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_08_box</child>
+  <parent>plink_09_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 10 --------------------------------------------------------------------------------------->
+<joint name="plink_10_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_09_box</child>
+  <parent>plink_10_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 11 --------------------------------------------------------------------------------------->
+<joint name="plink_11_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_10_box</child>
+  <parent>plink_11_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 12 --------------------------------------------------------------------------------------->
+<joint name="plink_12_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_11_box</child>
+  <parent>plink_12_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 13 --------------------------------------------------------------------------------------->
+<joint name="plink_13_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_12_box</child>
+  <parent>plink_13_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 14 --------------------------------------------------------------------------------------->
+<joint name="plink_14_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_13_box</child>
+  <parent>plink_14_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 15 --------------------------------------------------------------------------------------->
+<joint name="plink_15_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_14_box</child>
+  <parent>plink_15_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 16 --------------------------------------------------------------------------------------->
+<joint name="plink_16_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_15_box</child>
+  <parent>plink_16_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 17 --------------------------------------------------------------------------------------->
+<joint name="plink_17_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_16_box</child>
+  <parent>plink_17_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 18 --------------------------------------------------------------------------------------->
+<joint name="plink_18_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_17_box</child>
+  <parent>plink_18_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 19 --------------------------------------------------------------------------------------->
+<joint name="plink_19_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_18_box</child>
+  <parent>plink_19_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 03 - plink 20 --------------------------------------------------------------------------------------->
+<joint name="plink_20_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_19_box</child>
+  <parent>plink_20_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- MOVEMENT 03 - plink 21 --------------------------------------------------------------------------------------->
+<joint name="plink_21_MOVE_3" type="prismatic">
+  <pose>-0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_20_box</child>
+  <parent>plink_21_sphere_03</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!--                                                     MOVEMENT 04                                                               -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- MOVEMENT 04 - plink 02 --------------------------------------------------------------------------------------->
+<joint name="plink_2_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_01_box</child>
+  <parent>plink_02_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 03 --------------------------------------------------------------------------------------->
+<joint name="plink_3_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_02_box</child>
+  <parent>plink_03_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 04 --------------------------------------------------------------------------------------->
+<joint name="plink_4_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_03_box</child>
+  <parent>plink_04_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 05 --------------------------------------------------------------------------------------->
+<joint name="plink_5_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_04_box</child>
+  <parent>plink_05_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 06 --------------------------------------------------------------------------------------->
+<joint name="plink_6_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_05_box</child>
+  <parent>plink_06_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 07 --------------------------------------------------------------------------------------->
+<joint name="plink_7_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_06_box</child>
+  <parent>plink_07_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 08 --------------------------------------------------------------------------------------->
+<joint name="plink_8_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_07_box</child>
+  <parent>plink_08_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 09 --------------------------------------------------------------------------------------->
+<joint name="plink_9_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_08_box</child>
+  <parent>plink_09_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 10 --------------------------------------------------------------------------------------->
+<joint name="plink_10_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_09_box</child>
+  <parent>plink_10_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 11 --------------------------------------------------------------------------------------->
+<joint name="plink_11_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_10_box</child>
+  <parent>plink_11_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 12 --------------------------------------------------------------------------------------->
+<joint name="plink_12_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_11_box</child>
+  <parent>plink_12_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 13 --------------------------------------------------------------------------------------->
+<joint name="plink_13_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_12_box</child>
+  <parent>plink_13_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 14 --------------------------------------------------------------------------------------->
+<joint name="plink_14_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_13_box</child>
+  <parent>plink_14_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 15 --------------------------------------------------------------------------------------->
+<joint name="plink_15_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_14_box</child>
+  <parent>plink_15_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 16 --------------------------------------------------------------------------------------->
+<joint name="plink_16_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_15_box</child>
+  <parent>plink_16_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 17 --------------------------------------------------------------------------------------->
+<joint name="plink_17_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_16_box</child>
+  <parent>plink_17_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 18 --------------------------------------------------------------------------------------->
+<joint name="plink_18_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_17_box</child>
+  <parent>plink_18_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 19 --------------------------------------------------------------------------------------->
+<joint name="plink_19_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_18_box</child>
+  <parent>plink_19_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+
+<!-- MOVEMENT 04 - plink 20 --------------------------------------------------------------------------------------->
+<joint name="plink_20_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_19_box</child>
+  <parent>plink_20_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- MOVEMENT 04 - plink 21 --------------------------------------------------------------------------------------->
+<joint name="plink_21_MOVE_4" type="prismatic">
+  <pose>0.025 -0.035 -0.025 0 0 0</pose>
+  <child>plink_20_box</child>
+  <parent>plink_21_sphere_04</parent>
+  <axis>
+    <xyz>0 -1 0</xyz>
+    <limit>
+      <lower>-0.03</lower>
+      <upper>0</upper>
+    </limit>
+  </axis>
+</joint>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+
+<!--                                                  Plugin                                                                       -->               
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+
+<!--<plugin name="movementPlugin" filename= /> -->
+
+</model>
+</sdf>
